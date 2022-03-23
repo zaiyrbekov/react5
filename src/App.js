@@ -1,4 +1,7 @@
 import Paragraph from "./components/Paragraph/Paragraph";
+import Image from "./components/Image/Image";
+import koalaImage from "./assets/koala.png";
+
 
 function App() {
   return (
@@ -11,6 +14,8 @@ function App() {
       <Paragraph size="5px" color="green">
         this is simple paragraph
       </Paragraph>
+      <Image  url={koalaImage} width="150px" height="100px"></Image>
+      <Image url={koalaImage} width="150px" height="100px"></Image>
     </div>
   );
 }
