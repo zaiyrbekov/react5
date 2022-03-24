@@ -7,6 +7,6 @@ function Image(props) {
     height: props.height,
   };
 
-  return <img className="classNmae" style={style} src={props.url} />;
+  return <img className="className" style={style} src={props.url}/>;
 }
 export default Image;

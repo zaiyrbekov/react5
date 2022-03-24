@@ -1,21 +1,34 @@
-import Paragraph from "./components/Paragraph/Paragraph";
-import Image from "./components/Image/Image";
-import koalaImage from "./assets/koala.png";
+import Alert from "./components/Alert/Alert";
+import Button from "./components/Button/Button";
+import Tooltip from "./components/Tooltip/Tooltip";
 
 
 function App() {
   return (
     <div className="App">
-      <h1>hello world</h1>
+      <Alert primary>This is sample alert</Alert>
+      <Alert secondary>This is sample alert</Alert>
+      <Alert succes>This is sample alert</Alert>
+      <Alert danger>This is sample alert</Alert>
+      <Alert warning>This is sample alert</Alert>
+      <Alert info>This is sample alert</Alert>
+      <Alert light>This is sample alert</Alert>
+      <Alert dark>This is sample alert</Alert>
 
-      <Paragraph size="14px" color="red">
-        this is simple paragraph
-      </Paragraph>
-      <Paragraph size="5px" color="green">
-        this is simple paragraph
-      </Paragraph>
-      <Image  url={koalaImage} width="150px" height="100px"></Image>
-      <Image url={koalaImage} width="150px" height="100px"></Image>
+      <Button primary>primary</Button>
+      <Button secondary>secondary</Button>
+      <Button succes>succes</Button>
+      <Button danger>danger</Button>
+      <Button warning>warning</Button>
+      <Button info>info</Button>
+      <Button light>light</Button>
+      <Button dark>dark</Button>
+
+
+      {/* <Tooltip description="Tooltip on top" top>Tooltip on top</Tooltip>
+      <Tooltip description="Tooltip on right" right>Tooltip on right</Tooltip>
+      <Tooltip description="Tooltip on bottom" bottom>Tooltip on bottom</Tooltip>
+      <Tooltip description="Tooltip on left" left>Tooltip on left</Tooltip> */}
     </div>
   );
 }
